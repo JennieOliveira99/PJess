@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P'Jess.com</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+
+  <div  class="container">
+    <div class="row">
+      <!-- Seção à esquerda (substituída por menu toggler em telas menores) -->
+      <div id="side" class="col-md-4 col-sm-4 col-4">
+
+        <section class="profile-pic">
+            <img class="profile-img" src="img/jess.png" alt="">
+            <h1 class="h1-fixo"> P'Jess</h1>
+            <img class="profile-logo" src="img/logo.png"  alt="">
+           
+        </section>
+        
+        <section class="sidebar">
+          <div class="button-group">
+            <button class="top-link primeiro-link" onclick="scrollToSection('#section1')">Home</button>
+            <button class="top-link segundo-link" onclick="scrollToSection('#section2')">Obras</button>
+          </div>
+          <div class="button-group">
+            <button class="bottom-link terceiro-link" onclick="scrollToSection('#section3')">Adaptações</button>
+            <button class="bottom-link quarto-link" onclick="scrollToSection('#section4')">Sobre Mim</button>
+          </div>
+        </section>
+        
+          
+          
+      </div>
+      <!-- Seção à direita (ocupando o restante das colunas) -->
+      <div class="col-md-8 col-sm-8 col-8">
+        <div class="bg-secondary text-white p-3">
+          <h2>Seção à Direita</h2>
+          <p>Esta seção ocupará o restante das colunas e será exibida em todas as telas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

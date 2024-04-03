@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    
+    box-sizing: border-box; /* Mantém largura e altura definidas pelo desenvolvedor incluindo padding e bordas */
+  }
+
+  body{
+    background-color: #F1CBBE;
+  }
+
+
+  /*menu fixo lateral*/
+  #side {
+    background-color: #89000C;
+    height: 100vh; /* Altura igual à altura da tela */
+    padding: 30px;
+    padding-bottom: 300px; /* Adiciona espaço extra na parte inferior (opcional) */
+    z-index: 1000;
+}
+
+  /*secao onde fica a imagem*/
+  .profile-pic {
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 1000px 1000px 0 0;
+    width: 100%; /* Tornar a largura responsiva */
+    height: auto; /* Altura automática para tornar a imagem responsiva */
+    max-width: 180px; /* Definir a largura máxima */
+    margin: 50px auto; /* Centralizar */
+    text-align: center; /* Centraliza o conteúdo h1 horizontalmente */
+      }
+
+  /*imagem de perfil*/
+
+  .profile-img {
+    max-width: 100%; /* Tornar as imagens responsivas sem aumentar o tamanho */
+    height: auto; /* Altura automática */
+  }
+
+  .profile-logo,
+  .h1-fixo{
+    display: block;
+    margin: auto;
+
+  }
+  
+  .h1-fixo{
+    font-size: 3vw;
+  }
+  /*titulo nome fixo*/
+
+  /*itens de navegação itens fixos*/
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 33%;
+  }
+  
+  .button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+  }
+  
+  .button-group button {
+    background-color: rgb(255, 255, 255);
+    width: 110px; /* Define a largura dos botões */
+    margin-bottom: 25px; /* Adiciona margem inferior para espaçamento entre os botões */
+    padding: 6px;
+    border-radius: 10px;
+    margin-right: 5px;
+    font-size: 15px;
+  }
+
+  /*FIM DA SECTION VERMELHA*/
