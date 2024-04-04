@@ -62,6 +62,7 @@
   }
     /*titulo H1 nome fixo*/
   .h1-fixo{
+    font-family: 'Imbue', sans-serif;
     font-size: 3vw;
   }
 
@@ -97,10 +98,77 @@
     margin-right: 5px;
     padding: 6px;
     border-radius: 10px;
+    align-items: center;
     font-size: 15px;
   }
 
   /*FIM DA SECTION VERMELHA*/
-.bg-secondary{
-    margin-left: 50%;
+
+
+  /*Aqui começa a parte onde há scroll*/
+#scroll-part{
+    margin-left: 32%;/*trazendo o conteudo esquerdo*/
+    max-width: 100%;/*ocupando 100% da col-8*/
+    padding-top: 60px;
+    display: flex;
+    overflow-x: hidden;
+    padding-left: 30px;
 }
+
+h2{
+    font-family: 'Imbue', sans-serif;
+    color: #89000C;
+    font-size: 4em;
+    /* font-size: 5vw;*/
+
+}
+p{
+    color: #89000C;
+    font-size: 1.5em;
+}
+
+/*aqui começa a imagem maior da home*/
+
+/*.img-container {
+  max-width: 100%; /* Para garantir que a imagem se ajuste ao contêiner */
+ /* height: auto; /* Para garantir que a altura seja ajustada automaticamente proporcionalmente à largura */
+ /* min-height: 400px; /*altura mínima */
+
+/*
+.img-container img {
+  width: 100%; /* Para garantir que a imagem ocupe toda a largura do contêiner */
+ /* height: auto; /* Para manter a proporção da imagem */
+  /*display: block; /* Para remover margens adicionais */
+  /*margin: 0 auto; /* Para centralizar a imagem horizontalmente */
+
+.texto-home{
+  padding-top: 10px; /* Adicionando padding ao topo do texto */
+  padding-bottom: 10px; 
+  
+  }
+
+.container-img-home{
+    padding-left: 5%;
+   
+  }
+
+   /*imagem grande da home*/
+.custom-img {
+    /* height: 500px;*/
+      max-height: 500px; /* Defina a altura mínima desejada */
+}
+
+@media (min-width: 992px) {
+  .custom-img {
+    min-height: 500px;
+    width: 100%;
+
+  }
+}
+  
+
+  /*texto*/
+  .container-texto {
+    padding-left: 4%;
+ 
+  }

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>P'Jess.com</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="estilo/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Imbue:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <div  class="container">
+  <div  class="container-fluid">
     <div class="row">
       <!-- Seção à esquerda (substituída por menu toggler em telas menores) -->
       <div id="side" class="col-md-4 col-sm-4 col-4">
@@ -36,23 +37,31 @@
             <button class="bottom-link terceiro-link" onclick="scrollToSection('#section3')">Adaptações</button>
             <button class="bottom-link quarto-link" onclick="scrollToSection('#section4')">Sobre Mim</button>
           </div>
-        </section>
-        
-          
-          
+        </section>          
       </div>
-      <!-- Seção à direita (ocupando o restante das colunas) -->
-      <div class="col-md-8 col-sm-8 col-8">
-        <div class="bg-secondary text-white p-3">
-          <h2>Seção à Direita</h2>
-          <p>Esta seção ocupará o restante das colunas e será exibida em todas as telas.
+
+      <!-- na home foi configurado para que a img fique a esquerda e o texto a direita, mas em relacao a ux usamos order-sm-first para inverter o conteudo  -->
+      <div id="scroll-part" class="col-md-8 col-sm-8 col-8 ">
+        <div class="row">
+
+          <div class="col-lg-8 col-md-12 col-sm-12 col-12 container-texto order-first ">
+
+            <div class="p-3 texto-home">
+              <h2>Bem Vindo (a)</h2>
+              <p>
+                Ao mundo de P’Jess, onde cada história é uma porta para aventuras extraordinárias e romances inesquecíveis</p>
+                <img src="img/wild2.png" class="img-fluid" width="350px" height="auto" alt="Imagem responsiva">
+            </div>
             
-          </p>
+          </div>
+
+
+          <div class="col-lg-4 col-md-12 col-sm-12 container-img-home ">  <!-- Mantido col-md-8 para o texto -->
+           <img src="img/wild1.png" class="img-fluid custom-img"  alt="Imagem responsiva">
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-
+      
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
