@@ -13,15 +13,26 @@
     background-color: #F1CBBE;
   }
 
+.col-md-8 {
+    position: relative;
+    z-index: 2; /* Ajuste o valor de z-index conforme necessário */
+}
 
   /*menu fixo lateral*/
   #side {
+    position: fixed;
+    top: 0; /* A seção ficará fixa no topo da janela */
+    left: 0; /* A seção ficará fixa no lado esquerdo da janela */
     background-color: #89000C;
     height: 100vh; /* Altura igual à altura da tela */
     padding: 30px;
-    padding-bottom: 300px; /* Adiciona espaço extra na parte inferior (opcional) */
     z-index: 1000;
 }
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
   /*secao onde fica a imagem*/
   .profile-pic {
@@ -49,19 +60,26 @@
     margin: auto;
 
   }
-  
+    /*titulo H1 nome fixo*/
   .h1-fixo{
     font-size: 3vw;
   }
-  /*titulo nome fixo*/
+
+
+   
+  /*icones links*/
+  .link-icones{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
 
   /*itens de navegação itens fixos*/
 
   .sidebar {
     display: flex;
     flex-direction: column;
-    margin-top: 33%;
-  }
+     }
   
   .button-group {
     display: flex;
@@ -71,13 +89,18 @@
   }
   
   .button-group button {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(255, 255, 255);
     width: 110px; /* Define a largura dos botões */
-    margin-bottom: 25px; /* Adiciona margem inferior para espaçamento entre os botões */
+    margin-bottom: 10%; /* Adiciona margem inferior para espaçamento entre os botões */
+    margin-right: 5px;
     padding: 6px;
     border-radius: 10px;
-    margin-right: 5px;
     font-size: 15px;
   }
 
   /*FIM DA SECTION VERMELHA*/
+.bg-secondary{
+    margin-left: 50%;
+}
