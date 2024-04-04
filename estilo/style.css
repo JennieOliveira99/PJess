@@ -106,6 +106,7 @@
 
 
   /*Aqui começa a parte onde há scroll*/
+  
 #scroll-part{
     margin-left: 32%;/*trazendo o conteudo esquerdo*/
     max-width: 100%;/*ocupando 100% da col-8*/
@@ -115,12 +116,23 @@
     padding-left: 30px;
 }
 
-h2{
-    font-family: 'Imbue', sans-serif;
-    color: #89000C;
-    font-size: 4em;
-    /* font-size: 5vw;*/
 
+.titulos{
+  font-family: 'Imbue', sans-serif;
+  color: #89000C;
+  font-size: 5em;
+}
+
+.h2-obras{
+  font-family: 'Imbue', sans-serif;
+  color: #89000C;
+  font-size: 3em;
+}
+
+h2{
+  font-family: 'Imbue', sans-serif;
+  color: #89000C;
+  font-size: 3em;
 }
 p{
     color: #89000C;
@@ -165,10 +177,110 @@ p{
 
   }
 }
-  
-
   /*texto*/
   .container-texto {
     padding-left: 4%;
  
   }
+
+  /*Secao 1*/
+  #secaoZero,
+  #secaoUm,
+  #secaoDois,
+  #secaoTres,
+  #secaoQuatro{
+    margin-left: 32%;/*trazendo o conteudo esquerdo*/
+    max-width: 100%;/*ocupando 100% da col-8*/
+    padding-top: 60px;
+    display: flex;
+    overflow-x: hidden;
+    padding-left: 30px;
+}
+
+
+/*capa das obras*/
+.img-obras{
+  max-height: 220px;
+  margin-left: 11%;
+  margin-bottom: 6%;
+  /*borda na imagem*/
+  border: 3px solid #161414;
+  border-radius: 90px 90px 0 0;
+}
+
+
+/*configurando estilos da linha vertical com genero das obras*/
+
+/*linha vertical*/
+.vertical-line {
+  border-left: 5px solid #89000C; /* Define a borda esquerda da linha */
+  height: 150px; /* Define a altura da linha */
+  margin-right: 2%;
+  margin-left: 9%;
+}
+
+/*container que tem a linha e os itens*/
+.linha {
+  display: flex;
+  align-items: flex-start; /* Alinha os itens ao topo */
+}
+
+/*container onde tem o genero textual da obra*/
+.info-container {
+  display: flex;
+  flex-direction: column; /* Os itens serão dispostos em uma coluna */
+}
+
+.info {
+  margin: 5px 0; /* Adiciona espaço entre os itens */
+  color: #161414;
+}
+/*FIM DA LINHA VERTICAL E GENERO DAS OBRAS*/
+
+/*deixando o icone classificacao indicativa e o nome da obra lado a lado com display flex*/
+.container-status-obra{
+  display: flex;
+  margin-bottom: 0;
+  margin-left: 2%;
+}
+
+.h2-obras{
+  font-size: 3em;
+}
+
+/*icone +18*/
+.icone-classificacao{
+  height: 30px;
+  margin-top: 25px;
+  margin-right: 3px;
+}
+
+/*andamento da obra*/
+small{
+  color: #161414;
+}
+
+/*Texto resumo das obras*/
+.texto-descritivo{
+  color: #161414;
+  font-size: 1.3em;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+/*botao com link para a historia*/
+.btn-historia{
+  background-color: #F1CBBE;
+  border: #89000C 3px solid;
+  border-radius: 90px 60px 60px 0;
+  color: #89000C;
+  font-family: 'Imbue', sans-serif;
+  font-size: 1.5em;
+  width: 200px;
+  height: 50px;
+  padding: 3px;
+}
+.btn-historia:hover{
+  background-color: #89000C;
+  color: #fff;
+}
