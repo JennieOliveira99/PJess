@@ -11,6 +11,8 @@
 
   body{
     background-color: #F1CBBE;
+    overflow-x: hidden;
+   
   }
 
 .col-md-8 {
@@ -107,14 +109,13 @@
 
   /*Aqui começa a parte onde há scroll*/
   
-#scroll-part{
-    margin-left: 32%;/*trazendo o conteudo esquerdo*/
-    max-width: 100%;/*ocupando 100% da col-8*/
+  #scroll-part {
+    margin-left: 32%; /* trazendo o conteúdo para a direita */
+    max-width: calc(100% - 32%); /* ocupando 100% da largura menos a margem à esquerda */
     padding-top: 60px;
-    display: flex;
-    overflow-x: hidden;
-    padding-left: 30px;
+    overflow-x: hidden; /* esconde a barra de rolagem horizontal */
 }
+
 
 
 .titulos{
@@ -188,7 +189,9 @@ p{
   #secaoUm,
   #secaoDois,
   #secaoTres,
-  #secaoQuatro{
+  #secaoQuatro,
+  #secaoCinco,
+  #secaoSeis{
     margin-left: 32%;/*trazendo o conteudo esquerdo*/
     max-width: 100%;/*ocupando 100% da col-8*/
     padding-top: 60px;
@@ -218,6 +221,7 @@ p{
   margin-right: 2%;
   margin-left: 9%;
 }
+
 
 /*container que tem a linha e os itens*/
 .linha {
@@ -266,6 +270,7 @@ small{
   font-size: 1.3em;
   margin-top: 20%;
   margin-bottom: 20%;
+  margin-right: 5px;
 }
 
 /*botao com link para a historia*/
@@ -283,4 +288,28 @@ small{
 .btn-historia:hover{
   background-color: #89000C;
   color: #fff;
+}
+
+/*ADAPTAÇÕES*/
+
+.img-adaptacao-left,
+.img-adaptacao-right{
+max-width: 200px;
+max-height: auto;
+display: block;
+}
+
+@media (max-width: 992px) {
+.img-adaptacao-right{
+  display: none; /* Ocultar a imagem em telas médias */
+}
+}
+
+.img-adaptacao-bottom{
+  max-width: 70%;
+  max-height: auto;
+  margin-left: 30%;
+}
+.conteudo{
+  margin-left: -4%;
 }
