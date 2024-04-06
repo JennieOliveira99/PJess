@@ -313,3 +313,31 @@ display: block;
 .conteudo{
   margin-left: -4%;
 }
+
+/**/
+.conteudo-sobre{
+  margin-left: 42%;
+}
+
+.img-girl{
+  max-width: 320px;
+  max-height: auto;
+}
+
+.img-one,
+.img-two{
+  max-width: 225px;
+  max-height: auto;
+}
+.img-one{
+  margin-bottom: 5px;
+ 
+}
+
+.img-name{
+  max-width: 100px;
+  max-height: auto;
+  margin-top: 60px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
