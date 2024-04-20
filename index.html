@@ -18,6 +18,23 @@
     
       <div id="side" class="col-md-4 col-sm-4 col-4">
 
+        <div class="icones-nav">
+          <a href="#home">
+            <img class="img-icone-sm" src="img/logo.png" alt="Descrição da imagem">
+          </a>
+          <a href="#secaoZero">
+            <img class="img-icone-sm" src="img/logo.png" alt="Descrição da imagem">
+          </a>
+          <a href="#secaoSeis">
+            <img class="img-icone-sm" src="img/logo.png" alt="Descrição da imagem">
+          </a>
+          <a href="https://example.com">
+            <img class="img-icone-sm" src="img/logo.png" alt="Descrição da imagem">
+          </a>
+
+        </div>
+
+
         <section class="profile-pic">
             <img class="profile-img" src="img/jess.png" alt="">
             <h1 class="h1-fixo"> P'Jess</h1>
@@ -29,14 +46,15 @@
           <h2 class="text-white">Navegue pelo site</h2>
         </section>
 
+     
         <section class="sidebar">
           <div class="button-group">
-            <button class="top-link primeiro-link" onclick="scrollToSection('#section1')">Home</button>
-            <button class="top-link segundo-link" onclick="scrollToSection('#section2')">Obras</button>
+            <button class="top-link primeiro-link" onclick="scrollToSection('#home')">Home</button>
+            <button class="top-link segundo-link" onclick="scrollToSection('#secaoZero')">Obras</button>
           </div>
           <div class="button-group">
-            <button class="bottom-link terceiro-link" onclick="scrollToSection('#section3')">Adaptações</button>
-            <button class="bottom-link quarto-link" onclick="scrollToSection('#section4')">Sobre Mim</button>
+            <button class="bottom-link terceiro-link" onclick="scrollToSection('#secaoSeis')">Sobre Mim</button>
+            <button class="bottom-link quarto-link" onclick="scrollToSection('#section4')">Meu Perfil</button>
           </div>
         </section>          
       </div>
@@ -58,7 +76,7 @@
 
 
           <div class="col-lg-4 col-md-12 col-sm-12 container-img-home ">  
-           <img src="img/wild1.png" class="img-fluid custom-img" height="300px" width="auto" alt="Imagem responsiva">
+           <img src="img/254v.png" class="img-fluid custom-img" height="300px" width="auto" alt="Imagem responsiva">
           </div>
         </div>
 
@@ -77,7 +95,7 @@
 
       <div class="p-3 texto-home">
        
-        <img src="img/wild3.png" class="img-fluid img-obras"  alt="Imagem responsiva">
+        <img src="img/bite.png" class="img-fluid img-obras"  alt="Imagem responsiva">
 
         <aside class="info-box">
 
@@ -141,7 +159,7 @@
             <div class="p-3 texto-home">
 
              
-              <img src="img/wild3.png" class="img-fluid img-obras"  alt="Imagem responsiva">
+              <img src="img/seasons.png" class="img-fluid img-obras"  alt="Imagem responsiva">
       
               <aside class="info-box">
       
@@ -202,7 +220,7 @@
     <div  class="col-lg-6 col-md-12 col-sm-12 col-12 order-sm-last">
       <div class="p-3 texto-home">
        
-        <img src="img/wild3.png" class="img-fluid img-obras"  alt="Imagem responsiva">
+        <img src="img/wildhunter.png" class="img-fluid img-obras"  alt="Imagem responsiva">
 
         <aside class="info-box">
 
@@ -272,7 +290,7 @@
         <div  class="col-lg-6 col-md-12 col-sm-12 col-12 order-sm-last">
           <div class="p-3 texto-home">
            
-            <img src="img/wild3.png" class="img-fluid img-obras"  alt="Imagem responsiva">
+            <img src="img/paradise.png" class="img-fluid img-obras"  alt="Imagem responsiva">
     
             <aside class="info-box">
     
@@ -403,7 +421,11 @@
     </div>
   </div>
 -->
-
+   <!-- Nova linha para o segundo conjunto de conteúdo -->
+   <div id="secaoZero" class="row no-gutters">
+    <div  class="col-lg-6 col-md-12 col-sm-12 col-12">
+  <h1 class="titulos">Sobre mim</h1>
+  </div></div>
 
   <div id="secaoSeis" class="row no-gutters">
 
@@ -436,6 +458,15 @@
     </div>
   </div>
   
+  <script>
+    function scrollToSection(sectionId) {
+    var section = document.querySelector(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+  </script>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
