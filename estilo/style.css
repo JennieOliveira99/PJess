@@ -76,6 +76,9 @@
           margin-left: 15%;
       }
       
+      .text-white{
+     margin-left: 20%;
+      }
 
   /*imagem de perfil*/
 
@@ -339,7 +342,8 @@ display: block;
   .custom-img {
     max-height: 500px;
     width: auto;
-
+    margin-top: 30px;
+ 
 }
 
 
@@ -373,7 +377,7 @@ body{
   width: 80px;
   z-index: 1000;
   overflow: hidden;
-
+  padding-left: 3%;
 
 }
 
@@ -387,7 +391,7 @@ body{
 .icones-nav {
   display:block; /* ou a propriedade que você deseja, como display: inline; */
   justify-content: space-around;
-  margin-top: 150px;
+  margin-top: 130px;
 
 }
 .img-icone-sm{
@@ -411,7 +415,17 @@ body{
   margin-left: 10%;
 }
 
-.img-adaptacao-bottom{
+.textos,
+.titulos{
+  margin-left: 12%;
+  margin-right: 5%;
+}
+
+small{
+  margin-left: 12%;
+}
+.img-adaptacao-bottom,
+.img-adaptacao-right{
  display: none;
 }
 
