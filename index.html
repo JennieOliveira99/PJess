@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,18 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
   <link rel="stylesheet" href="estilo/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Imbue:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
+
 <body>
 
-  <div  class="container-fluid">
+  <div class="container-fluid">
     <div class="row">
-    
+
       <div id="side" class="col-md-4 col-sm-4 col-4">
 
         <div class="icones-nav">
@@ -23,30 +27,30 @@
             <img class="img-icone-sm" src="img/home.png" width="50px" height="50px" alt="Descrição da imagem">
           </a>
           <a href="#secaoUm">
-            <img class="img-icone-sm"src="img/read.png" width="50px" height="50px"  alt="Descrição da imagem">
+            <img class="img-icone-sm" src="img/read.png" width="50px" height="50px" alt="Descrição da imagem">
           </a>
-        
+
           <a href="#secaoZero">
-            <img class="img-icone-sm" src="img/search.png" width="50px" height="50px"  alt="Descrição da imagem">
+            <img class="img-icone-sm" src="img/search.png" width="50px" height="50px" alt="Descrição da imagem">
           </a>
           <a href="#secaoSeis">
-            <img class="img-icone-sm" src="img/me.png" width="50px" height="50px"  alt="Descrição da imagem">
+            <img class="img-icone-sm" src="img/me.png" width="50px" height="50px" alt="Descrição da imagem">
           </a>
         </div>
 
 
         <section class="profile-pic">
-            <img class="profile-img" src="img/jess.png" alt="">
-            <h1 class="h1-fixo"> P'Jess</h1>
-            <img class="profile-logo" src="img/home.png" width="40px" height="40px"   alt="">
-           
+          <img class="profile-img" src="img/jess.png" alt="">
+          <h1 class="h1-fixo"> P'Jess</h1>
+          <img class="profile-logo" src="img/home.png" width="40px" height="40px" alt="">
+
         </section>
-        
+
         <section class="link-icones">
           <h2 class="text-white">Navegue pelo site</h2>
         </section>
 
-     
+
         <section class="sidebar">
           <div class="button-group">
             <button class="top-link primeiro-link" onclick="scrollToSection('#home')">Home</button>
@@ -55,9 +59,9 @@
           <div class="button-group">
             <button class="bottom-link quarto-link" onclick="scrollToSection('#secaoZero')">Lançamentos</button>
             <button class="bottom-link terceiro-link" onclick="scrollToSection('#secaoSeis')">Sobre Mim</button>
-       
+
           </div>
-        </section>          
+        </section>
       </div>
 
       <!-- na home foi configurado para que a img fique a esquerda e o texto a direita, mas em relacao a ux usamos order-sm-first para inverter o conteudo  -->
@@ -67,174 +71,123 @@
           <div id="home" class="col-lg-8 col-md-12 col-sm-12 col-12 container-texto order-first ">
 
             <div class="p-3 texto-home">
-              <h1 class="titulos">Bem Vindo (a)</h1>
+              <h1 class="titulos" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">Bem Vindo (a)
+              </h1>
               <p>
-                Ao mundo de P’Jess, onde cada história é uma porta para aventuras extraordinárias e romances inesquecíveis.</p>
-                <img src="img/wild2.png" class="img-fluid" width="350px" height="auto" alt="Imagem responsiva">
+                Explore histórias que desafiam os limites do sobrenatural e mergulhe em emoções intensas a cada virada
+                de página. Bem-vindo a um mundo onde o suspense é palpável e o terror é uma constante. Prepare-se para
+                uma experiência literária única.
+              <div>
+                <a href="#secaoSeis">
+                  <img src="img/wild2.png" class="img-fluid" width="350px" height="auto" alt="Imagem responsiva">
+                </a>
+              </div>
             </div>
-            
+
           </div>
 
 
-          <div class="col-lg-4 col-md-12 col-sm-12 container-img-home ">  
-           <img src="img/254v.png" class="img-fluid custom-img" height="300px" width="auto" alt="Imagem responsiva">
+          <div class="col-lg-4 col-md-12 col-sm-12 container-img-home ">
+            <img src="img/254v.png" class="img-fluid custom-img" height="300px" width="auto" alt="Imagem responsiva"
+              data-aos="fade-up" data-aos-duration="2000">
           </div>
         </div>
-
-</div></div>
-
-        <!-- Nova linha para o segundo conjunto de conteúdo -->
-        <div id="secaoUm" class="row no-gutters">
-          <div  class="col-lg-6 col-md-12 col-sm-12 col-12">
-        <h1 class="titulos">Obras</h1>
-        </div></div>
-
-  <div id="secaoUm" class="row no-gutters">
-        <!-- Conteúdo 2: Imagem e Texto Adicionais -->
-    <div  class="col-lg-6 col-md-12 col-sm-12 col-12 order-sm-last">
-    
-
-      <div class="p-3 texto-home">
-       
-        <img src="img/bite.png" class="img-fluid img-obras"  alt="Imagem responsiva">
-
-        <aside class="info-box">
-
-          <div class="container-status-obra">
-            <img class="icone-classificacao" src="img/classi.png" width="50px" height="150px"   alt="icone de classificacao, maior de 18,  um coracao vermelho com os numeros 18 dentro">
-         
-          <h2 class="h2-obras">
-            Informações
-            
-          </h2>
-          
-          <small> Concluída</small>
-          </div>
-          
-               </aside>
-
-        <div class="linha">
-          <div class="vertical-line"></div>
-          <div class="info-container">
-            <p class="info"> * Aventura</p>
-            <p class="info"> * Fantasia</p>
-          <p class="info"> * Romance</p>
-          <p class="info"> * Universo Alternativo</p>
-        </div>
-        </div>
-
 
       </div>
     </div>
 
-    <div class="col-lg-6 col-md-12 col-sm-12 ">
+    <!-- Nova linha para o segundo conjunto de conteúdo -->
+    <div id="secaoUm" class="row no-gutters">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+        <h1 class="titulos" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">Obras</h1>
+      </div>
+    </div>
 
-      
+    <div id="secaoUm" class="row no-gutters">
+      <!-- Conteúdo 2: Imagem e Texto Adicionais -->
+      <div class="col-lg-6 col-md-12 col-sm-12 col-12 order-sm-last">
 
-      <h2>Bite me</h2>
-      <p class="texto-descritivo">Por anos tentamos descobrir a maior fraqueza dos vampiros Classe A's ou Nobres como são conhecidos...Mas eles simplesmente não morriam,com o seu desenvolvimento genético e sua mutação, o seu corpo se tornou tão forte e regenerável que era incrível como esses seres viviam em qualquer lugar ou de qualquer modo em Ágape.<br>
 
-        Mas a natureza pregou uma peça nessa espécie, o maior inimigo de um vampiro, e sua classificação mais baixa essa seria a sua maior fraqueza e sua condenação de morte.
-        
-        <br>Um Classe de lobo tão frágil e sensível poderia destruir e acabar facilmente com a vida de um vampiro Nobre como os Classe A's, de uma maneira inimaginável.
-        
-        Ninguém esperaria que um Ômega poderia domar uma fera poderosa e quase imortal.
-        <br>
-        "Somos só eu e você neste mundo<br>
-        Volte para mim, me amarre..<br>
-        Se você vai me salvar<br>
-        Apenas venha, me beije e me morda."</p>
-     
-      <a href="https://www.wattpad.com/story/355236429?utm_source=android&utm_medium=link&utm_content=share_writing&wp_page=create&wp_uname=PiJessie" target="_blank" class="btn btn-historia">Ler História</a>
+        <div class="p-3 texto-home">
 
+          <img src="img/bite.png" class="img-fluid img-obras" alt="Imagem responsiva" data-aos="fade-up"
+            data-aos-duration="2000">
+
+          <aside class="info-box">
+
+            <div class="container-status-obra">
+              <img class="icone-classificacao" src="img/classi.png"
+                alt="icone de classificacao, maior de 18,  um coracao vermelho com os numeros 18 dentro">
+
+              <h2 class="h2-obras">
+                Informações
+
+              </h2>
+
+              <small> Concluída</small>
+            </div>
+
+          </aside>
+
+          <div class="linha">
+            <div class="vertical-line"></div>
+            <div class="info-container">
+              <p class="info"> * Aventura</p>
+              <p class="info"> * Fantasia</p>
+              <p class="info"> * Romance</p>
+              <p class="info"> * Universo Alternativo</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12 ">
+
+
+
+        <h2>Bite me</h2>
+        <p class="texto-descritivo">Durante anos, tentamos descobrir a maior fraqueza dos vampiros Classe A, também
+          conhecidos como Nobres. Eles pareciam invencíveis devido ao seu desenvolvimento genético e regeneração
+          extraordinária. No entanto, a natureza pregou uma peça nessa espécie ao designar sua maior fraqueza como a
+          classificação mais baixa: os lobos, seres frágeis e sensíveis, eram capazes de destruir facilmente até mesmo
+          os vampiros mais poderosos. Essa dinâmica inesperada revelou que até mesmo um Ômega poderia dominar essas
+          criaturas quase imortais, como evidenciado na frase: "Somos só eu e você neste mundo. Volte para mim, me
+          amarre... Se você vai me salvar, apenas venha, me beije e me morda."</p>
+
+        <a href="https://www.wattpad.com/story/355236429?utm_source=android&utm_medium=link&utm_content=share_writing&wp_page=create&wp_uname=PiJessie"
+          target="_blank" class="btn btn-historia">Ler História</a>
+
+      </div>
     </div>
   </div>
-</div>
-</div>
-      
+  </div>
 
-         <!-- Nova linha para o segundo conjunto de conteúdo -->
-         <div id="secaoDois" class="row no-gutters">
-          <!-- Conteúdo 2: Imagem e Texto Adicionais -->
-          <div  class="col-lg-6 col-md-12 col-sm-12 col-12 order-sm-last">
-            <div class="p-3 texto-home">
 
-             
-              <img src="img/seasons.png" class="img-fluid img-obras"  alt="Imagem responsiva">
-      
-              <aside class="info-box">
-      
-                <div class="container-status-obra">
-                  <img class="icone-classificacao" src="img/classi.png" width="50px" height="150px"   alt="icone de classificacao, maior de 18,  um coracao vermelho com os numeros 18 dentro">
-                <h2 class="h2-obras">
-                  Informações
-                  
-                </h2>
-                <small> Concluída</small>
-                </div>
-                
-                     </aside>
-      
-              <div class="linha">
-                <div class="vertical-line"></div>
-                <div class="info-container">
-                  <p class="info"> * Boys Love</p>
-                  <p class="info"> * Fantasia</p>
-                <p class="info"> * Romance</p>
-                <p class="info"> * Universo Alternativo</p>
-              </div>
-              </div>
-      
-      
-            </div>
-          </div>
-      
-          <div class="col-lg-6 col-md-12 col-sm-12 ">
-            <h2>  Four Seasons</h2>
-            <p class="texto-descritivo">O mundo denominado Eros, era uma completa confusão com apenas duas estações o Verão e o Inverno. <br>
-              
-              Alguns lugares eram extremamente quentes, a alta temperatura dizimava todos aqueles que ali habitavam e apenas os mais resistentes e que se adaptavam ao clima estravagantemente quente, poderiam usufruir de sua vida e tentar dar  continuidade a espécie.
-              <br>
-              Somente seres místicos do fogo viviam nesse local acompanhados por animais que com o tempo haviam se desenvolvido de um modo em que a sua sobrevivência fosse garantida as extremas temperatura do mencionado local.
-              <br>
-              Já em outros lugares as condições climáticas eram terrivelmente frias, e tudo a sua volta era coberto pela grande camada de gelo.
-              <br>
-              O chão era repleto da massa gélida de neve e as plantas não podiam crescer ou sequer dar frutos, com uma temperatura um tanto quanto baixa apenas seres com habitat natural frio, e seres místicos poderiam viver ali.
-              <br>
-              A mãe natureza, vendo como aquilo prejudicava o desenvolvimento e a vida, tantos dos animais quanto dos seres místicos existentes em Eros, decidiu mudar essa realidade e iniciou a busca do equilíbrio perfeito.
-              <br>
-
-            </p>
-            
-            <a href="https://www.wattpad.com/story/227800969?utm_source=android&utm_medium=link&utm_content=share_writing&wp_page=create&wp_uname=PiJessie" target="_blank" class="btn btn-historia">Ler História</a>
-      
-          </div>
-        </div>
-      </div>
-      </div>
-      
-      
-
-             <!-- Nova linha para o segundo conjunto de conteúdo -->
-  <div id="secaoTres" class="row no-gutters">
+  <!-- Nova linha para o segundo conjunto de conteúdo -->
+  <div id="secaoDois" class="row no-gutters">
     <!-- Conteúdo 2: Imagem e Texto Adicionais -->
-    <div  class="col-lg-6 col-md-12 col-sm-12 col-12 order-sm-last">
+    <div class="col-lg-6 col-md-12 col-sm-12 col-12 order-sm-last">
       <div class="p-3 texto-home">
-       
-        <img src="img/wildhunter.png" class="img-fluid img-obras"  alt="Imagem responsiva">
+
+
+        <img src="img/seasons.png" class="img-fluid img-obras" alt="Imagem responsiva" data-aos="fade-up"
+          data-aos-duration="2000">
 
         <aside class="info-box">
 
           <div class="container-status-obra">
-            <img class="icone-classificacao" src="img/classi.png" width="50px" height="150px"   alt="icone de classificacao, maior de 18,  um coracao vermelho com os numeros 18 dentro">
-          <h2 class="h2-obras">
-            Informações
-            
-          </h2>
-          <small> Concluída</small>
+            <img class="icone-classificacao" src="img/classi.png"
+              alt="icone de classificacao, maior de 18,  um coracao vermelho com os numeros 18 dentro">
+            <h2 class="h2-obras">
+              Informações
+
+            </h2>
+            <small> Concluída</small>
           </div>
-          
-               </aside>
+
+        </aside>
 
         <div class="linha">
           <div class="vertical-line"></div>
@@ -243,7 +196,7 @@
             <p class="info"> * Fantasia</p>
             <p class="info"> * Romance</p>
             <p class="info"> * Universo Alternativo</p>
-        </div>
+          </div>
         </div>
 
 
@@ -251,18 +204,79 @@
     </div>
 
     <div class="col-lg-6 col-md-12 col-sm-12 ">
-      <h2> Wild Hunter</h2>
+      <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"> Four Seasons</h2>
+      <p class="texto-descritivo">O mundo de Eros enfrentava uma confusão de apenas duas estações, Verão e Inverno.
+        Alguns lugares eram extremamente quentes, tornando a vida difícil para a maioria dos habitantes, enquanto apenas
+        os mais resistentes podiam sobreviver e tentar perpetuar a espécie. Seres místicos do fogo eram os únicos que
+        podiam viver nessas áreas, junto com animais adaptados às altas temperaturas. Em outros lugares, as condições
+        eram extremamente frias, com gelo cobrindo tudo e impedindo o crescimento das plantas. A mãe natureza,
+        percebendo os problemas causados por essas condições, começou a buscar um equilíbrio para garantir a
+        sobrevivência de todos os habitantes de Eros.
+
+      </p>
+
+      <a href="https://www.wattpad.com/story/227800969?utm_source=android&utm_medium=link&utm_content=share_writing&wp_page=create&wp_uname=PiJessie"
+        target="_blank" class="btn btn-historia">Ler História</a>
+
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
+  <!-- Nova linha para o segundo conjunto de conteúdo -->
+  <div id="secaoTres" class="row no-gutters">
+    <!-- Conteúdo 2: Imagem e Texto Adicionais -->
+    <div class="col-lg-6 col-md-12 col-sm-12 col-12 order-sm-last">
+      <div class="p-3 texto-home">
+
+        <img src="img/wildhunter.png" class="img-fluid img-obras" alt="Imagem responsiva" data-aos="fade-up"
+          data-aos-duration="2000">
+
+        <aside class="info-box">
+
+          <div class="container-status-obra">
+            <img class="icone-classificacao" src="img/classi.png"
+              alt="icone de classificacao, maior de 18,  um coracao vermelho com os numeros 18 dentro">
+            <h2 class="h2-obras">
+              Informações
+
+            </h2>
+            <small> Concluída</small>
+          </div>
+
+        </aside>
+
+        <div class="linha">
+          <div class="vertical-line"></div>
+          <div class="info-container">
+            <p class="info"> * Boys Love</p>
+            <p class="info"> * Fantasia</p>
+            <p class="info"> * Romance</p>
+            <p class="info"> * Universo Alternativo</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="col-lg-6 col-md-12 col-sm-12 ">
+      <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"> Wild Hunter</h2>
       <p class="texto-descritivo">
 
         A realidade de uma sociedade unida foi destruída por uma traição...
-  <br>
+        <br>
         Essa traição nos dividiu em dois...
         <br>
         O mundo antes era maravilhoso Híbridos e humanos unidos e vivendo juntos.
         <br>
-        Mas após uma traição caluniada contra aqueles que eram considerados animais selvagens e perigosos, tudo se perdeu tanto vidas quanto amor, empatia, compaixão e também aquilo o que os tornavam humanos a racionalidade.
+        Mas após uma traição caluniada contra aqueles que eram considerados animais selvagens e perigosos, tudo se
+        perdeu tanto vidas quanto amor, empatia, compaixão e também aquilo o que os tornavam humanos a racionalidade.
         <br>
-        Mataram todos aqueles que eram hibridos de descendência selvagem, aqueles que seus ancestrais viviam em savanas e florestas.
+        Mataram todos aqueles que eram hibridos de descendência selvagem, aqueles que seus ancestrais viviam em savanas
+        e florestas.
         <br>
         Milhares de inoscente mortos poucos sobreviventes...
         <br>
@@ -275,170 +289,187 @@
         [...]
 
       </p>
-     
-      <a href="https://www.wattpad.com/story/224724572?utm_source=android&utm_medium=link&utm_content=share_writing&wp_page=create&wp_uname=PiJessie" target="_blank" class="btn btn-historia">Ler História</a>
+
+      <a href="https://www.wattpad.com/story/224724572?utm_source=android&utm_medium=link&utm_content=share_writing&wp_page=create&wp_uname=PiJessie"
+        target="_blank" class="btn btn-historia">Ler História</a>
 
     </div>
   </div>
-</div>
-</div>
-      
+  </div>
+  </div>
 
 
-       <!-- Nova linha para o segundo conjunto de conteúdo -->
-       <div id="secaoQuatro" class="row no-gutters">
-        <!-- Conteúdo 2: Imagem e Texto Adicionais -->
-        <div  class="col-lg-6 col-md-12 col-sm-12 col-12 order-sm-last">
-          <div class="p-3 texto-home">
-           
-            <img src="img/paradise.png" class="img-fluid img-obras"  alt="Imagem responsiva">
-    
-            <aside class="info-box">
-    
-              <div class="container-status-obra">
-              <img class="icone-classificacao" src="img/classi.png" width="50px" height="150px"   alt="icone de classificacao, maior de 18,  um coracao vermelho com os numeros 18 dentro">
-              <h2 class="h2-obras">
-                Informações
-              </h2>
-              <small> Concluída</small>
-              </div>
-              
-                   </aside>
-    
-            <div class="linha">
-              <div class="vertical-line"></div>
-              <div class="info-container">
-                <p class="info"> * Boys Love</p>
-                <p class="info"> * Fantasia</p>
-                <p class="info"> * Romance</p>
-                <p class="info"> * Universo Alternativo</p>
-            </div>
-            </div>
-    
-    
+
+  <!-- Nova linha para o segundo conjunto de conteúdo -->
+  <div id="secaoQuatro" class="row no-gutters">
+    <!-- Conteúdo 2: Imagem e Texto Adicionais -->
+    <div class="col-lg-6 col-md-12 col-sm-12 col-12 order-sm-last">
+      <div class="p-3 texto-home">
+
+        <img src="img/paradise.png" class="img-fluid img-obras" alt="Imagem responsiva" data-aos="fade-up"
+          data-aos-duration="2000">
+
+        <aside class="info-box">
+
+          <div class="container-status-obra">
+            <img class="icone-classificacao" src="img/classi.png"
+              alt="icone de classificacao, maior de 18,  um coracao vermelho com os numeros 18 dentro">
+            <h2 class="h2-obras">
+              Informações
+            </h2>
+            <small> Concluída</small>
+          </div>
+
+        </aside>
+
+        <div class="linha">
+          <div class="vertical-line"></div>
+          <div class="info-container">
+            <p class="info"> * Boys Love</p>
+            <p class="info"> * Fantasia</p>
+            <p class="info"> * Romance</p>
+            <p class="info"> * Universo Alternativo</p>
           </div>
         </div>
 
 
-    
-        <div class="col-lg-6 col-md-12 col-sm-12 ">
-          <h2>Wild Paradise</h2>
-          <p class="texto-descritivo">
-            Segunda temporada de Wild Hunter.
-           <br>   <br>
-           Apesar de agora Xiao ter se tornado ômega de Yibo e os dois liderarem juntos a WILD PARADISE, a profecia ainda não se cumpriu e agora as cidades estão mais rivais do que nunca.
-           
-           <br>
-           A-Cheng não sabe que seu amado irmão se tornou parte da espécie que ele mais odeia.
-
-           <br>
-           E também não sabe que este irá junto ao seu maior inimigo liderar a sua rival cidade.
-           
-           <br>
-           Será Xiao a destruição da barreira entre cidades?E a união delas.
-           <br>
-           <br>
-           Ou
-           <br>
-           <br>
-
-           A destruição de ambos lados.
-           <br>  <br>
-           Tudo está nas mãos de Zhan cabe a ele decidir.
-
-           <br>
-
-           Uma nova temporada com novos personagens e com novos acontecimentos.
-           <br>  <br>
-          </p>
-          <a href="https://www.wattpad.com/story/230411478?utm_source=android&utm_medium=link&utm_content=share_writing&wp_page=create&wp_uname=PiJessie" target="_blank" class="btn btn-historia">Ler História</a>
-    
-
-        </div>
-     
       </div>
     </div>
+
+
+
+    <div class="col-lg-6 col-md-12 col-sm-12 ">
+      <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">Wild Paradise</h2>
+      <p class="texto-descritivo">
+        Segunda temporada de Wild Hunter.
+        <br> <br>
+        Apesar de agora Xiao ter se tornado ômega de Yibo e os dois liderarem juntos a WILD PARADISE, a profecia ainda
+        não se cumpriu e agora as cidades estão mais rivais do que nunca.
+
+        <br>
+        A-Cheng não sabe que seu amado irmão se tornou parte da espécie que ele mais odeia.
+
+        <br>
+        E também não sabe que este irá junto ao seu maior inimigo liderar a sua rival cidade.
+
+        <br>
+        Será Xiao a destruição da barreira entre cidades?E a união delas.
+        <br>
+        <br>
+        Ou
+        <br>
+        <br>
+
+        A destruição de ambos lados.
+        <br> <br>
+        Tudo está nas mãos de Zhan cabe a ele decidir.
+
+        <br>
+
+        Uma nova temporada com novos personagens e com novos acontecimentos.
+        <br> <br>
+      </p>
+      <a href="https://www.wattpad.com/story/230411478?utm_source=android&utm_medium=link&utm_content=share_writing&wp_page=create&wp_uname=PiJessie"
+        target="_blank" class="btn btn-historia">Ler História</a>
+
+
     </div>
 
+  </div>
+  </div>
+  </div>
 
-    <div id="secaoZero" class="row no-gutters">
-      <div  class="col-lg-12 col-md-12 col-sm-12 col-12">
-    <h1 class="titulos">Traduções e Adaptações</h1>
-    </div></div>
-    
-    <div id="secaoCinco" class="container">
-      
-     
-      <div class="row">
-       
-        <div class="col-lg-3 col-md-4 col-sm-12">
-          <img src="img/esquerda.png" class="img-fluid  img-adaptacao-left" alt="Imagem responsiva">
-        </div>
-    
-        <div class="col-lg-3 col-md-4 col-sm-12 conteudo">
-          <h2 class="titulos">Canibal</h2>
-          <small> História Original by Nathan_978</small>
-          <div class="textos">
+
+  <div id="secaoZero" class="row no-gutters">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+      <h1 class="titulos" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">Traduções e Adaptações
+      </h1>
+    </div>
+  </div>
+
+  <div id="secaoCinco" class="container">
+
+
+    <div class="row">
+
+      <div class="col-lg-3 col-md-4 col-sm-12">
+        <img src="img/esquerda.png" class="img-fluid  img-adaptacao-left" alt="Imagem responsiva" data-aos="fade-up"
+          data-aos-duration="3000">
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-12 conteudo">
+        <h2 class="titulos" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">Canibal</h2>
+        <small> História Original by Nathan_978</small>
+        <div class="textos">
           <p>
-           <br>
-           Um jovem com uma vida quase perfeita!
-           <br>
-           Xiao Zhan ninguém esperaria que por trás de suas delicadas feições, havia um segredo obscuro e aterrorizante.
+            <br>
+            Um jovem com uma vida quase perfeita!
+            <br>
+            Xiao Zhan ninguém esperaria que por trás de suas delicadas feições, havia um segredo obscuro e
+            aterrorizante.
 
             Que foi descoberto por Yibo alguém tão perigoso quanto o próprio Zhan.
-           <br>
-           Por sua curiosidade Yibo se tornou então atual inimigo de Xiao Zhan,não imaginando o perigo que sua vida corria.
+            <br>
+            Por sua curiosidade Yibo se tornou então atual inimigo de Xiao Zhan,não imaginando o perigo que sua vida
+            corria.
 
-           <br>
-           Isso porque o principal lema de Xiao era:
-           <br>
-           
+            <br>
+            Isso porque o principal lema de Xiao era:
+            <br>
+
             "Se o inimigo é o predador, faça dele a sua presa!"
-       
-           
-          
+
+
+
 
           </p>
-          <a href="https://www.wattpad.com/story/230485173?utm_source=android&utm_medium=link&utm_content=share_writing&wp_page=create&wp_uname=PiJessie" target="_blank" class="btn btn-historia">Ler História</a>
-    
-        </div>
-        </div>
-    
-    
-        <div class="col-lg-3 col-md-4 col-sm-12">
-          <img src="img/direita.png" class="img-fluid img-adaptacao-right" alt="Imagem responsiva">
+          <a href="https://www.wattpad.com/story/230485173?utm_source=android&utm_medium=link&utm_content=share_writing&wp_page=create&wp_uname=PiJessie"
+            target="_blank" class="btn btn-historia">Ler História</a>
+
         </div>
       </div>
-    
+
+
+      <div class="col-lg-3 col-md-4 col-sm-12">
+        <img src="img/direita.png" class="img-fluid img-adaptacao-right" alt="Imagem responsiva" data-aos="fade-down"
+          data-aos-easing="linear" data-aos-duration="1500">
       </div>
-    
-    
+    </div>
+
+  </div>
+
+
   <div class="row">
-   
+
     <div class="col-lg-12 col-md-12 col-sm-12 img-bottom">
       <img src="img/baixo.png" class="img-fluid  img-adaptacao-bottom" alt="Imagem responsiva">
     </div>
   </div>
 
-   <!-- Nova linha para o segundo conjunto de conteúdo -->
-   <div id="secaoSeis" class="row no-gutters">
-    <div  class="col-lg-6 col-md-12 col-sm-12 col-12">
-  <h1 class="titulos">Sobre mim</h1>
-  </div></div>
+  <!-- Nova linha para o segundo conjunto de conteúdo -->
+  <div id="secaoSeis" class="row no-gutters">
+    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+      <h1 class="titulos" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">Sobre mim</h1>
+    </div>
+  </div>
 
   <div id="secaoSeis" class="row no-gutters">
 
     <div class="col-lg-6 col-md-12 col-sm-12 col-12 order-md-2">
       <div id="secaotexto" class="container">
-     
+
         <!-- Imagem de girl -->
-        <img src="img/girl.png" class="img-fluid img-girl" alt="Imagem responsiva">
-        <p>
-          Lorem ipsum dolor re eius culpa velit. Voluptate dolore harum natus deleru
+        <img src="img/girl.png" class="img-fluid img-girl" alt="Imagem responsiva " data-aos="fade-down"
+          data-aos-easing="linear" data-aos-duration="1500">
+          <h1 class="titulos">Quem sou eu?</h1>
+        <p class="p-sobre">
+
+          Em meio às palavras, sou uma autora dedicada, apaixonada pelos gatos e pela cor rosa, que colore minha vida. Vivo na serenidade da área rural da cidade, onde encontro inspiração para criar minhas histórias encantadoras.
+
         </p>
       </div>
     </div>
-  
+
     <div id="secaoimg" class="col-lg-6 col-md-12 col-sm-12 col-12 order-md-1">
       <div class="container">
         <div class="row">
@@ -448,27 +479,35 @@
           </div>
           <!-- Imagens de roses e list -->
           <div class="col-md-6 img-side-sobre d-flex flex-column">
-            <img src="img/roses.png" class="img-fluid img-one" alt="Imagem responsiva">
+            <img src="img/roses.png" class="img-fluid img-one" alt="Imagem responsiva" data-aos="fade-down"
+              data-aos-easing="linear" data-aos-duration="1500">
             <img src="img/list.png" class="img-fluid img-two" alt="Imagem responsiva">
           </div>
-          
+
         </div>
       </div>
     </div>
   </div>
-  
+
   <script>
     function scrollToSection(sectionId) {
-    var section = document.querySelector(sectionId);
-    if (section) {
+      var section = document.querySelector(sectionId);
+      if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
+      }
     }
-}
+
+
+    //iniciando as animações
+    AOS.init();
+
+
 
   </script>
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

@@ -1,201 +1,248 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    
-    box-sizing: border-box; /* Mantém largura e altura definidas pelo desenvolvedor incluindo padding e bordas */
-  }
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 
-  .icones-nav{
-    display: none;
-  }
-  body{
-    background-color: #F1CBBE;
-    overflow-x: hidden;
-   
-  }
+  box-sizing: border-box;
+  /* Mantém largura e altura definidas pelo desenvolvedor incluindo padding e bordas */
+}
+
+
+.container-img-home {
+  overflow: hidden;
+  /* Desabilita a rolagem apenas para a seção da home */
+}
+
+
+.icone-classificacao {
+  width: 80px;
+  /* Largura desejada */
+  height: 80px;
+  /* Altura desejada */
+  object-fit: cover;
+  /* Ajusta a imagem para cobrir o contêiner mantendo sua proporção */
+  margin-top: -15px;
+}
+
+
+.icones-nav {
+  display: none;
+}
+
+body {
+  background-color: #F1CBBE;
+  overflow-x: hidden;
+
+
+}
+
 
 
 .col-md-8 {
-    position: relative;
-    z-index: 2; /* Ajuste o valor de z-index conforme necessário */
+  position: relative;
+  z-index: 2;
+  /* Ajuste o valor de z-index conforme necessário */
 }
 
-  /*menu fixo lateral*/
-  #side {
-    position: fixed;
-    top: 0; /* A seção ficará fixa no topo da janela */
-    left: 0; /* A seção ficará fixa no lado esquerdo da janela */
-    background-color: #89000C;
-    height: 100vh; /* Altura igual à altura da tela */
-    padding: 30px;
-    z-index: 1000;
+/*menu fixo lateral*/
+#side {
+  position: fixed;
+  top: 0;
+  /* A seção ficará fixa no topo da janela */
+  left: 0;
+  /* A seção ficará fixa no lado esquerdo da janela */
+  background-color: #89000C;
+  height: 100vh;
+  /* Altura igual à altura da tela */
+  padding: 30px;
+  z-index: 1000;
 }
 
 .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
-  /*secao onde fica a imagem*/
-  .profile-pic {
-    position: relative;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 1000px 1000px 0 0;
-    width: 100%; /* Tornar a largura responsiva */
-    height: auto; /* Altura automática para tornar a imagem responsiva */
-    max-width: 180px; /* Definir a largura máxima */
-    margin: 50px auto; /* Centralizar */
-    text-align: center; /* Centraliza o conteúdo h1 horizontalmente */
-      }
+/*secao onde fica a imagem*/
+.profile-pic {
+  position: relative;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 1000px 1000px 0 0;
+  width: 100%;
+  /* Tornar a largura responsiva */
+  height: auto;
+  /* Altura automática para tornar a imagem responsiva */
+  max-width: 180px;
+  /* Definir a largura máxima */
+  margin: 50px auto;
+  /* Centralizar */
+  text-align: center;
+  /* Centraliza o conteúdo h1 horizontalmente */
+}
 
-      .titulos{
-        font-family: 'Imbue', sans-serif;
-        color: #89000C;
-        font-size: 5em;
-      }
-      
-      .h2-obras{
-        font-family: 'Imbue', sans-serif;
-        color: #89000C;
-        font-size: 3em;
-      }
-      
-      h2{
-        font-family: 'Imbue', sans-serif;
-        color: #89000C;
-        font-size: 3em;
-      }
-      .texto-descritivo{
-          color: #89000C;
-          font-size: 1em;
-          margin-left: 15%;
-      }
-      
-      .text-white{
-     margin-left: 20%;
-      }
+.titulos {
+  font-family: 'Imbue', sans-serif;
+  color: #89000C;
+  font-size: 5em;
+}
 
+.h2-obras {
+  font-family: 'Imbue', sans-serif;
+  color: #89000C;
+  font-size: 3em;
+}
 
-  /*imagem de perfil*/
+h2 {
+  font-family: 'Imbue', sans-serif;
+  color: #89000C;
+  font-size: 3em;
+}
 
-  .profile-img {
-    max-width: 100%; /* Tornar as imagens responsivas sem aumentar o tamanho */
-    height: auto; /* Altura automática */
-  }
+.texto-descritivo {
+  color: #89000C;
+  font-size: 1em;
+  margin-left: 15%;
+}
 
-  .profile-logo,
-  .h1-fixo{
-    display: block;
-    margin: auto;
-
-  }
-    /*titulo H1 nome fixo*/
-  .h1-fixo{
-    font-family: 'Imbue', sans-serif;
-    font-size: 3vw;
-  }
+.text-white {
+  margin-left: 20%;
+}
 
 
-   
-  /*icones links*/
-  .link-icones{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-  }
+/*imagem de perfil*/
 
-  /*itens de navegação itens fixos*/
+.profile-img {
+  max-width: 100%;
+  /* Tornar as imagens responsivas sem aumentar o tamanho */
+  height: auto;
+  /* Altura automática */
+}
 
-  .sidebar {
-    display: flex;
-    flex-direction: column;
-     }
-  
-     /***********Botoes da parte vermelha*/
-  .button-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-   
-  }
-  
-  .button-group button {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255);
-    width: 110px; /* Define a largura dos botões */
-    margin-bottom: 10%; /* Adiciona margem inferior para espaçamento entre os botões */
-    margin-right: 5px;
-    padding: 6px;
-    border-radius: 10px;
-    align-items: center;
-    font-size: 15px;
-  }
+.profile-logo,
+.h1-fixo {
+  display: block;
+  margin: auto;
 
-  /*FIM DA SECTION VERMELHA*/
+}
+
+/*titulo H1 nome fixo*/
+.h1-fixo {
+  font-family: 'Imbue', sans-serif;
+  font-size: 3vw;
+}
+
+
+
+/*icones links*/
+.link-icones {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+/*itens de navegação itens fixos*/
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+/***********Botoes da parte vermelha*/
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.button-group button {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  width: 110px;
+  margin-bottom: 4%;
+  margin-right: 5px;
+  padding: 6px;
+  border-radius: 10px;
+  align-items: center;
+  font-size: 15px;
+}
+
+/*FIM DA SECTION VERMELHA*/
+#scroll-part {
+  margin-left: 34%;
+  /* trazendo o conteúdo para a direita */
+  max-width: calc(100% - 34%);
+  /* ocupando 100% da largura menos a margem à esquerda */
+  padding-top: 60px;
+  overflow-x: hidden;
+  /* esconde a barra de rolagem horizontal */
+
+}
+
+/*==================================================Aqui começa a parte onde há scroll*/
+@media (min-width: 967px) and (max-width: 992px) {
   #scroll-part {
-    margin-left: 34%; /* trazendo o conteúdo para a direita */
-    max-width: calc(100% - 34%); /* ocupando 100% da largura menos a margem à esquerda */
+    margin-left: 34%;
+    /* trazendo o conteúdo para a direita */
+    max-width: calc(100% - 34%);
+    /* ocupando 100% da largura menos a margem à esquerda */
     padding-top: 60px;
-    overflow-x: hidden; /* esconde a barra de rolagem horizontal */
+    overflow-x: hidden;
+    /* esconde a barra de rolagem horizontal */
 
   }
 
-  /*==================================================Aqui começa a parte onde há scroll*/
-  @media (min-width: 967px) and (max-width: 992px) {
-  #scroll-part {
-    margin-left: 34%; /* trazendo o conteúdo para a direita */
-    max-width: calc(100% - 34%); /* ocupando 100% da largura menos a margem à esquerda */
-    padding-top: 60px;
-    overflow-x: hidden; /* esconde a barra de rolagem horizontal */
-
-  }
-  .icones-nav{
+  .icones-nav {
     display: none;
   }
 
-.texto-home{
-  padding-top: 10px; /* Adicionando padding ao topo do texto */
-  padding-bottom: 10px; 
+  /*--------------------------HOME*/
+
+  .texto-home {
+    padding-top: 10px;
+    /* Adicionando padding ao topo do texto */
+    padding-bottom: 10px;
   }
 
-.container-img-home{
+  .container-img-home {
     padding-left: 5%;
-   
+
   }
 
 }
 
-  /*texto*/
-  .container-texto {
-    padding-left: 4%;
- 
-  }
+/*texto*/
+.container-texto {
+  padding-left: 4%;
 
-  /*Secao 1*/
-  #secaoZero,
-  #secaoUm,
-  #secaoDois,
-  #secaoTres,
-  #secaoQuatro,
-  #secaoCinco,
-  #secaoSeis{
-    margin-left: 32%;/*trazendo o conteudo esquerdo*/
-    max-width: 100%;/*ocupando 100% da col-8*/
-    padding-top: 60px;
-    display: flex;
-    overflow-x: hidden;
-    padding-left: 30px;
+}
+
+/*Secao 1*/
+#secaoZero,
+#secaoUm,
+#secaoDois,
+#secaoTres,
+#secaoQuatro,
+#secaoCinco,
+#secaoSeis {
+  margin-left: 32%;
+  /*trazendo o conteudo esquerdo*/
+  max-width: 100%;
+  /*ocupando 100% da col-8*/
+  padding-top: 60px;
+  display: flex;
+  overflow-x: hidden;
+  padding-left: 30px;
 }
 
 
 /*capa das obras*/
-.img-obras{
+.img-obras {
   max-height: 350px;
   margin-left: 11%;
   margin-bottom: 8%;
@@ -210,8 +257,10 @@
 
 /*linha vertical*/
 .vertical-line {
-  border-left: 5px solid #89000C; /* Define a borda esquerda da linha */
-  height: 150px; /* Define a altura da linha */
+  border-left: 5px solid #89000C;
+  /* Define a borda esquerda da linha */
+  height: 150px;
+  /* Define a altura da linha */
   margin-right: 2%;
   margin-left: 9%;
 }
@@ -220,48 +269,52 @@
 /*container que tem a linha e os itens*/
 .linha {
   display: flex;
-  align-items: flex-start; /* Alinha os itens ao topo */
+  align-items: flex-start;
+  /* Alinha os itens ao topo */
 }
 
 /*container onde tem o genero textual da obra*/
 .info-container {
   display: flex;
-  flex-direction: column; /* Os itens serão dispostos em uma coluna */
+  flex-direction: column;
+  /* Os itens serão dispostos em uma coluna */
 }
 
 .info {
-  margin: 5px 0; /* Adiciona espaço entre os itens */
+  margin: 5px 0;
+  /* Adiciona espaço entre os itens */
   color: #161414;
 }
+
 /*FIM DA LINHA VERTICAL E GENERO DAS OBRAS*/
 
 /*deixando o icone classificacao indicativa e o nome da obra lado a lado com display flex*/
-.container-status-obra{
+.container-status-obra {
   display: flex;
   margin-bottom: 0;
   margin-left: 2%;
 }
 
-.h2-obras{
+.h2-obras {
   font-size: 2em;
 }
 
 
 
-/*icone +18*/
+/*icone +18*
 .icone-classificacao{
-  height: 30px;
+
   margin-top: 25px;
   margin-right: 3px;
 }
-
+*/
 /*andamento da obra*/
-small{
+small {
   color: #161414;
 }
 
 /*Texto resumo das obras*/
-.texto-descritivo{
+.texto-descritivo {
   color: #161414;
   font-size: 1em;
   margin-top: 5%;
@@ -270,7 +323,7 @@ small{
 }
 
 /*botao com link para a historia*/
-.btn-historia{
+.btn-historia {
   background-color: #F1CBBE;
   border: #89000C 3px solid;
   border-radius: 90px 60px 60px 0;
@@ -282,7 +335,8 @@ small{
   padding: 3px;
   margin-left: 15%;
 }
-.btn-historia:hover{
+
+.btn-historia:hover {
   background-color: #89000C;
   color: #fff;
 }
@@ -290,11 +344,12 @@ small{
 /*ADAPTAÇÕES*/
 
 .img-adaptacao-left,
-.img-adaptacao-right{
-max-width: 200px;
-max-height: auto;
-display: block;
+.img-adaptacao-right {
+  max-width: 200px;
+  max-height: auto;
+  display: block;
 }
+
 /*
 @media (max-width: 992px) {
 .img-adaptacao-right{
@@ -302,37 +357,42 @@ display: block;
 }
 }*/
 
-.img-adaptacao-bottom{
+.img-adaptacao-bottom {
   max-width: 70%;
   max-height: auto;
   margin-left: 30%;
   margin-top: 5%;
 }
-.conteudo{
+
+.conteudo {
   margin-left: -4%;
 }
 
-/*SOBRE MIM*/
-.conteudo-sobre{
+/*S----------------------------------------------OBRE MIM*/
+/*#secaoSeis{
+  background-image: url(../img/bg.jpg);
+}*/
+.conteudo-sobre {
   margin-left: 42%;
 }
 
-.img-girl{
+.img-girl {
   max-width: 320px;
   max-height: auto;
 }
 
 .img-one,
-.img-two{
+.img-two {
   max-width: 225px;
   max-height: auto;
 }
-.img-one{
+
+.img-one {
   margin-bottom: 5px;
- 
+
 }
 
-.img-name{
+.img-name {
   max-width: 100px;
   max-height: auto;
   margin-top: 60px;
@@ -340,11 +400,21 @@ display: block;
   margin-right: 30px;
 }
 
-  .custom-img {
-    max-height: 500px;
-    width: auto;
-    margin-top: 30px;
- 
+.custom-img {
+  max-height: 500px;
+  width: auto;
+  margin-top: 30px;
+
+}
+
+.h1-sobre {
+  color: #89000C;
+
+}
+
+.p-sobre {
+  margin-top: 20px;
+  margin-bottom: 90px;
 }
 
 
@@ -353,127 +423,147 @@ display: block;
   /* Estilos para telas móveis */
 
   /* Oculta a seção à esquerda em telas menores */
- /* #side {
+  /* #side {
     display: none;
   }*/
-/*menu fixo lateral*/
+  /*menu fixo lateral*/
 
-body{
-  padding-left: 10px;
-  margin-left: 10px;
-  
-}
-.h2-obras{
-  font-size: 1.5em;
+  body {
+    padding-left: 10px;
+    margin-left: 10px;
+
+  }
+
+  .h2-obras {
+    font-size: 1.5em;
+  }
+
+  #side {
+    position: fixed;
+    top: 10%;
+    height: 80%;
+    border-radius: 0 80px 80px 0;
+    left: 0;
+    background-color: #89000C;
+    /* Altura igual à altura da tela */
+    width: 80px;
+    z-index: 1000;
+    overflow: hidden;
+    padding-left: 3%;
+
+  }
+
+  .profile-pic,
+  .profile-img,
+  .text-white,
+  .sidebar {
+    display: none;
+  }
+
+  .icones-nav {
+    display: block;
+    /* ou a propriedade que você deseja, como display: inline; */
+    justify-content: space-around;
+    margin-top: 130px;
+
+  }
+
+  .img-icone-sm {
+    margin-right: 30px;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    left: 0;
+  }
+
+  #scroll-part {
+    margin-left: 10%;
+  }
+
+  #home {
+    overflow-y: hidden !important;
+  }
+
+  #secaoZero,
+  #secaoUm,
+  #secaoDois,
+  #secaoTres,
+  #secaoQuatro,
+  #secaoCinco,
+  #secaoSeis {
+    margin-left: 10%;
+  }
+
+  .textos,
+  .titulos {
+    margin-left: 12%;
+    margin-right: 5%;
+  }
+
+  small {
+    margin-left: 12%;
+  }
+
+  .img-adaptacao-bottom,
+  .img-adaptacao-right {
+    display: none;
+  }
+
+  #secaoCinco .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .img-name {
+    margin-top: 0;
+    /* Removendo a margem superior */
+    margin-left: 0;
+    /* Removendo a margem esquerda */
+    margin-right: 15px;
+    /* Ajustando a margem direita */
+  }
+
+  .img-one,
+  .img-two,
+  .img-name {
+    max-width: calc(50% - 7.5px);
+    /* Ajustando a largura das imagens */
+    margin-bottom: 15px;
+    /* Adicionando margem inferior */
+  }
+
+  .order-md-1 {
+    order: 2;
+  }
+
+  .order-md-2 {
+    order: 1;
+  }
+
+
+  .img-side-sobre img {
+    display: block;
+    margin-bottom: 10px;
+    max-width: 80%;
+    /* Mantendo a largura da imagem da girl em 100% */
+    margin-right: 25px;
+  }
+
+  .img-girl {
+    max-width: 100%;
+    /* Mantendo a largura da imagem da girl em 100% */
+    margin-right: 25px;
+  }
+
+  .img-name {
+    margin-top: 10px;
+  }
+
+  .conteudo-sobre {
+    margin-left: 0;
+    /* Removendo a margem esquerda */
+  }
+
 }
 
-#side {
-  position: fixed;
-  top: 10%;
-  height: 80%; 
-  border-radius:  0 80px 80px 0 ;
-  left: 0; 
-  background-color: #89000C;
-   /* Altura igual à altura da tela */
-  width: 80px;
-  z-index: 1000;
-  overflow: hidden;
-  padding-left: 3%;
-
-}
-
-.profile-pic,
-.profile-img,
-.text-white,
-.sidebar{
-  display: none;
-}
-
-.icones-nav {
-  display:block; /* ou a propriedade que você deseja, como display: inline; */
-  justify-content: space-around;
-  margin-top: 130px;
-
-}
-.img-icone-sm{
-  margin-right: 30px;
-  align-items: center; 
-  gap: 20px;
-  margin-bottom: 20px;
-  left: 0;
-}
-
-#scroll-part{
-  margin-left: 10%;
-}
-#secaoZero,
-#secaoUm,
-#secaoDois,
-#secaoTres,
-#secaoQuatro,
-#secaoCinco,
-#secaoSeis{
-  margin-left: 10%;
-}
-
-.textos,
-.titulos{
-  margin-left: 12%;
-  margin-right: 5%;
-}
-
-small{
-  margin-left: 12%;
-}
-.img-adaptacao-bottom,
-.img-adaptacao-right{
- display: none;
-}
-
-#secaoCinco .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.img-name {
-  margin-top: 0; /* Removendo a margem superior */
-  margin-left: 0; /* Removendo a margem esquerda */
-  margin-right: 15px; /* Ajustando a margem direita */
-}
-
-.img-one,
-.img-two,
-.img-name {
-  max-width: calc(50% - 7.5px); /* Ajustando a largura das imagens */
-  margin-bottom: 15px; /* Adicionando margem inferior */
-}
-
-.order-md-1 {
-  order: 2;
-}
-
-.order-md-2 {
-  order: 1;
-}
-
-
-.img-side-sobre img {
-  display: block;
-  margin-bottom: 10px;
-  max-width: 80%; /* Mantendo a largura da imagem da girl em 100% */
-  margin-right: 25px;
-}
-.img-girl {
-  max-width: 100%; /* Mantendo a largura da imagem da girl em 100% */
-  margin-right: 25px;
-}
- 
-.img-name{
-  margin-top: 10px;
-}
-.conteudo-sobre {
-  margin-left: 0; /* Removendo a margem esquerda */
-}
-
-}
